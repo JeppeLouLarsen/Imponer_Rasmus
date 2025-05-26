@@ -1,2 +1,2 @@
 # Imponer_Rasmus
-Lag noe som imponerer Rasmus
+Lage en nettside hvor man kan se ulike ting rundt om i verden. Hvor jeg da bruker APIer for å finne informasjon.
