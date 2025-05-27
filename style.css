@@ -5,18 +5,26 @@
     font-family: sans-serif;
 }
 
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 10vh;
-    background: #000;
+    
 }
 
 .Menu{
     display: flex;
     justify-content: space-around;
-    width: 40%;
+    width: 100%;
+    gap: 75px;
 }
 
 .Menu li{
@@ -40,6 +48,9 @@ nav{
 
 .Logo{
     color: #fff;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 15px;
 }
 
 .card{
@@ -130,30 +141,76 @@ nav{
 }
 
 .grid_cont{
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 500px 500px;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 20px 0px;
+    
 
 }
 
 .grid_cont div{
+    flex: 0 0 auto;
     border: 2px solid black;
-    border-radius: 10px;
+    width: 328px;
+    height: 450px;
+    object-fit: cover;
+    
 }
 
-.boks1{
-    background: linear-gradient(135deg, #00feba, #5b548a);
-}
-
-.boks2{
-    background: linear-gradient(135deg, grey, black);
-}
-
-.boks3{
-    background: linear-gradient(135deg, #8FE388 , #0C7C59);
-}
 
 .spacer{
-    height: 200px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+body{
+    background-color: beige;
+    
+}
+
+.btn-green{
+    background-color: #0C7C59;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    height: 45px;
+    width: 250px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn-green:hover{
+    background-color: #8FE388;
+}
+
+.space-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather{
+    display: none;
 }
