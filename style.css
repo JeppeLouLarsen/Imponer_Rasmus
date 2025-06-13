@@ -245,15 +245,15 @@ main {
 }
 
 .boks1:hover {
-    background-color: #F7F7F9;
     margin-top: -10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    background-color: #F7F7F9;
 }
 
 .imgboks {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background-image: url("images/snowy.png");
+    background-image: url("images/weather.png");
     background-position: center;
     background-size: contain;
     height: 55%;
@@ -283,11 +283,16 @@ main {
 .textboks {
     height: 45%;
     width: 100%;
-    padding: 10px;
     padding: 20px 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #D0C6CE;
+    transition: 1s;
+}
+
+.textboks:hover{
+    background-color:#F7F7F9 ;
 }
 
 .textboks h1 {
@@ -308,4 +313,119 @@ main {
 .card-footer {
     border-top: 3px solid #F7F7F9;
     padding-top: 12px;
+}
+
+.stocksgrid{
+    display: grid;
+    grid-template-columns: 650px 350px;
+    grid-template-rows: 200px 200px 400px;
+    gap: 20px;
+}
+
+.stocks{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.stocks table {
+  width: 100%;
+}
+
+.stocks th,
+.stocks td {
+  padding: 12px 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.stocks thead th {
+  color: #1f2937;
+  font-weight: 600;
+}
+
+.stocks .change.up {
+  color: #00e676;
+}
+
+.stocks .change.down {
+  color: #ff5252;
+}
+
+.graf{
+   border: 1px solid black; 
+   grid-column: 1/2;
+   grid-row: 3/4;
+}
+
+.dashboard{
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    border-radius: 10px;
+    padding: 7px;
+}
+
+.portafolio{
+    border: 1px solid black;
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.dashboks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 10px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+.dashboks button{
+    height: 20px;
+    width: 30px;
+    outline:0;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashb-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.dashboksp{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.dashboksp h2{
+    font-size: 15px;
+}
+
+.dashboksp p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.dashb-header{
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.dashb-header h1{
+    font-size: 25px;
+}
+
+.dashb-header p{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
 }
